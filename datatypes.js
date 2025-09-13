@@ -28,14 +28,4 @@ console.log(results2); //2
 let depList;
 let sum = numList.reduce((acc, curr) => acc + curr, 0); //go through each element and add it to accumulator
 console.log(sum); //15
-/*enum type */
-var color;
-(function (color) {
-    color[color["Red"] = 0] = "Red";
-    color[color["Green"] = 1] = "Green";
-    color[color["Blue"] = 2] = "Blue";
-})(color || (color = {}));
-let colorName = color[2];
-console.log(colorName); //Blue
-let c = color.Green;
-console.log(c); //1 //index of Green in enum
+let c = 2 /* color.Blue */;

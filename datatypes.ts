@@ -51,6 +51,7 @@ let sum=numList.reduce((acc,curr)=>acc+curr,0); //go through each element and ad
 console.log(sum); //15
 
 /*enum type */
+/*
 enum color{
     Red,
     Green,
@@ -61,5 +62,23 @@ let colorName=color[2];
 console.log(colorName); //Blue
 
 let c:color=color.Green;
-console.log(c); //1 //index of Green in enum
+console.log(c); *///1 //index of Green in enum
 
+//for production
+const enum color{
+    Red,
+    Green,
+    Blue
+}
+let c:color=color.Blue;
+
+/*Tuple type */
+
+let swapNumbs:[firstNumber:number,secondNumber:number];
+
+function swapNumbers(num1:number,num2:number):[number,number]{
+    return [num2,num1];
+}
+swapNumbs=swapNumbers(10,20);
+
+console.log(swapNumbs); //[20,10]
