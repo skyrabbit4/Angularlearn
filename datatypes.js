@@ -29,3 +29,17 @@ let depList;
 let sum = numList.reduce((acc, curr) => acc + curr, 0); //go through each element and add it to accumulator
 console.log(sum); //15
 let c = 2 /* color.Blue */;
+/*Tuple type */
+let swapNumbs;
+function swapNumbers(num1, num2) {
+    return [num2, num1];
+}
+swapNumbs = swapNumbers(10, 20);
+console.log(swapNumbs); //[20,10]
+/* Any type */
+//dont use it
+//it can hold any type of value
+//it is used when we dont know the type of value at compile time
+let department;
+department = "IT";
+department = 10;

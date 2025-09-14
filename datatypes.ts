@@ -82,3 +82,11 @@ function swapNumbers(num1:number,num2:number):[number,number]{
 swapNumbs=swapNumbers(10,20);
 
 console.log(swapNumbs); //[20,10]
+
+/* Any type */
+//dont use it
+//it can hold any type of value
+//it is used when we dont know the type of value at compile time
+let department:any
+department="IT";
+department=10;
