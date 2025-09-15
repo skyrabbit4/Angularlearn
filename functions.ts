@@ -38,7 +38,7 @@ const sub1=(num1:number,num2:number,num3:number=0):number=>{ //default value of 
 console.log(sub1(10,5));
 
 
-//rest parameter
+//rest parameter for
 
 function add3(num1:number,num2:number,...num3:number[]):number{
 
