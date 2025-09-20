@@ -41,5 +41,14 @@ console.log(sub1(10,5));
 //rest parameter for
 
 function add3(num1:number,num2:number,...num3:number[]):number{
-    return num1 + num2 + num3.reduce((acc, curr) => acc + curr, 0);
+    return num1 + num2 + num3.reduce((a,b)=>a+b,0); //reduce to sum all elements in num3 array
 }
+
+let numbers=[1,2,3,4,5];
+
+console.log(add3(2,3,...numbers)); //20
+
+
+
+
+
