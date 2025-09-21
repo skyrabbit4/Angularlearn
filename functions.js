@@ -30,4 +30,13 @@ function add3(num1, num2, ...num3) {
     return num1 + num2 + num3.reduce((a, b) => a + b, 0); //reduce to sum all elements in num3 array
 }
 let numbers = [1, 2, 3, 4, 5];
-console.log(add3(2, 3, ...numbers)); //18
+console.log(add3(2, 3, ...numbers)); //20
+//generic function
+//in generic function we can pass any type of data and it will return the same type of data
+function getItem(items) {
+    return new Array().concat(items);
+}
+let concatResult = getItem([1, 2, 3, 4, 5]);
+console.log(concatResult); //[1,2,3,4,5]
+let concatResult1 = getItem(['a', 'b', 'c', 'd', 'e']);
+console.log(concatResult1); //['a','b','c','d','e']

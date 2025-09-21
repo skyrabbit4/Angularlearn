@@ -48,7 +48,18 @@ let numbers=[1,2,3,4,5];
 
 console.log(add3(2,3,...numbers)); //20
 
+//generic function
+//in generic function we can pass any type of data and it will return the same type of data
 
+function getItem<Type>(items:Type[]):Type[]{
+    return new Array<Type>().concat(items);
+}
+
+let concatResult=getItem<number>([1,2,3,4,5]);
+console.log(concatResult); //[1,2,3,4,5]
+
+let concatResult1=getItem<string>(['a','b','c','d','e']);
+console.log(concatResult1); //['a','b','c','d','e']
 
 
 

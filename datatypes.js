@@ -23,8 +23,8 @@ let numList;
 numList = [1, 2, 3, 4, 5];
 let results = numList.filter((num) => num > 2);
 console.log(results); //[3,4,5]
-let results2 = numList.find((num) => num === 2); //undefined if not found
-console.log(results2); //2
+//let results2=numList.find((num)=>num===2); //undefined if not found
+//console.log(results2); //2
 let depList;
 let sum = numList.reduce((acc, curr) => acc + curr, 0); //go through each element and add it to accumulator
 console.log(sum); //15

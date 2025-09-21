@@ -41,8 +41,8 @@ let results=numList.filter((num)=>num>2);
 console.log(results); //[3,4,5]
 
 
-let results2=numList.find((num)=>num===2); //undefined if not found
-console.log(results2); //2
+//let results2=numList.find((num)=>num===2); //undefined if not found
+//console.log(results2); //2
 
 let depList:Array<string>;
 
