@@ -1,4 +1,4 @@
-interface User{
+export interface User{
     name:string;
     age?:number; //optional property
     id:number;
@@ -18,6 +18,6 @@ let employee:Employee={name:"kaushik",age:23,id:23,email:"shubham@com",salary:23
 
 //method defination
 
-interface Login{
+export interface Login{
     Login():User;
 }

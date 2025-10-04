@@ -1,3 +1,5 @@
+import {Login,User} from './interface';
+
 interface Address{
     street:string;
     city:string;
@@ -5,7 +7,8 @@ interface Address{
     zipCode:string;
 }
 
-class EmployeeInformation{
+
+class EmployeeInformation implements Login{
     #id!:number;
    protected name!:string;
     age!:number;
@@ -37,6 +40,9 @@ class EmployeeInformation{
     //class with method to display employee details
     getNameWithAddress():string{
     return `${this.name} from ${this.address}`;
+   }
+   Login():User{
+    return {name:"shubham",age:25,id:1,email:"shubham@example.com"}
    }
 }
 
@@ -111,4 +117,6 @@ console.log(address); //shubham kaushik from 123, Main Street, City
 3. Classes can implement interfaces, ensuring that they adhere to the defined structure.
 4. Interfaces can be used to achieve polymorphism, allowing different classes to be treated as the same type if they implement the same interface.
 */
+
+
 
