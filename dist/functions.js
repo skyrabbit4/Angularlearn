@@ -40,3 +40,4 @@ let concatResult = getItem([1, 2, 3, 4, 5]);
 console.log(concatResult); //[1,2,3,4,5]
 let concatResult1 = getItem(['a', 'b', 'c', 'd', 'e']);
 console.log(concatResult1); //['a','b','c','d','e']
+//# sourceMappingURL=functions.js.map

@@ -43,3 +43,4 @@ console.log(swapNumbs); //[20,10]
 let department;
 department = "IT";
 department = 10;
+//# sourceMappingURL=datatypes.js.map

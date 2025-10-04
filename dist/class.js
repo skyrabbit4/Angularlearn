@@ -92,3 +92,4 @@ console.log(address); //shubham kaushik from 123, Main Street, City
 3. Classes can implement interfaces, ensuring that they adhere to the defined structure.
 4. Interfaces can be used to achieve polymorphism, allowing different classes to be treated as the same type if they implement the same interface.
 */
+//# sourceMappingURL=class.js.map
